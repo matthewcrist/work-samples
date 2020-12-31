@@ -1,0 +1,23 @@
+<div class="mta-flex mta-flex-col mta-flex-grow mta-border-b-4 mta-border-primary-300">
+    <a href="{{ url }}" class="mta-card mta-flex mta-flex-grow mta-flex-col">
+        {% if image %}
+            <span style="background-image: url('{{ image }}')" class="mta-flex mta-h-1800 mta-bg-card mta-bg-cover bg-no-repeat"></span>
+        {% endif %}
+        <span class="mta-flex mta-flex-grow mta-p-150 mta-pb-250 mta-text-3xl mta-min-h-1200">
+            <span class="mta-card-content mta-relative mta-block mta-w-full">
+                <span class="mta-card-title mta-font-bold">{{ title }}</span>
+                {% if subtitle %}
+                    <span class="mta-card-subtitle mta-block mta-text-2xl mta-leading-400 mta-font-bold">{{ subtitle }}</span>
+                {% endif %}
+                {% if description %}
+                    <span class="mta-card-title mta-block mta-text-2xl mta-leading-600 mta-mt-100">{{ description }}</span>
+                {% endif %}
+                {% if icon %}
+                    {% if (icon == 'downloadable') or (icon == 'external') %}
+                        <span class="mta-absolute mta-right-0 mta-bottom-0 icon icon-{{ icon }}"></span>
+                    {% endif %}
+                {% endif %}
+            </span>
+        </span>
+    </a>
+</div>

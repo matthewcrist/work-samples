@@ -1,0 +1,46 @@
+.mta-card {
+    background-color: theme('colors.grey.000');
+
+    &-content {
+        flex-basis: 100%;
+    }
+
+    &-title {
+        flex-basis: 100%;
+        color: theme('colors.grey.700');
+    }
+
+    &-description {
+        line-height: 1.1;
+    }
+
+    .mta-card-subtitle {
+        color: theme('colors.primary.300');
+    }
+
+    &:visited {
+        color: theme('colors.grey.700');
+        background-color: theme('colors.grey.000');
+
+        .mta-card-title {
+            color: theme('colors.grey.700');
+        }
+
+        .mta-card-subtitle {
+            color: theme('colors.primary.300');
+        }
+    } 
+
+    &:hover {
+        color: theme('colors.grey.000');
+        background-color: theme('colors.primary.300');
+
+        .mta-card-title {
+            color: theme('colors.grey.000');
+        }
+
+        .mta-card-subtitle {
+            color: theme('colors.grey.000');
+        }
+    } 
+}
